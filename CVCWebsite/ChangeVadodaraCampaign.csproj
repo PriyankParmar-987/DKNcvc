@@ -1,0 +1,566 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8253281F-B145-4436-A6F6-03496921E8E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChangeVadodaraCampaign</RootNamespace>
+    <AssemblyName>ChangeVadodaraCampaign</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CVCAdmin\fonts\digital-7-webfont.eot" />
+    <Content Include="CVCAdmin\fonts\digital-7-webfont.ttf" />
+    <Content Include="CVCAdmin\fonts\digital-7-webfont.woff" />
+    <Content Include="CVCAdmin\fonts\digital-7_italic-webfont.eot" />
+    <Content Include="CVCAdmin\fonts\digital-7_italic-webfont.ttf" />
+    <Content Include="CVCAdmin\fonts\digital-7_italic-webfont.woff" />
+    <Content Include="CVCAdmin\fonts\digital-7_mono-webfont.eot" />
+    <Content Include="CVCAdmin\fonts\digital-7_mono-webfont.ttf" />
+    <Content Include="CVCAdmin\fonts\digital-7_mono-webfont.woff" />
+    <Content Include="CVCAdmin\fonts\fontawesome-webfont.eot" />
+    <Content Include="CVCAdmin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CVCAdmin\fonts\fontawesome-webfont.woff" />
+    <Content Include="CVCAdmin\fonts\FontAwesome.otf" />
+    <Content Include="CVCAdmin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CVCAdmin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CVCAdmin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CVCAdmin\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CVCAdmin\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="CVCAdmin\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="CVCAdmin\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="CVCAdmin\maps\africa.json" />
+    <Content Include="CVCAdmin\maps\america.json" />
+    <Content Include="CVCAdmin\maps\asia.json" />
+    <Content Include="CVCAdmin\maps\europe.json" />
+    <Content Include="CVCAdmin\maps\mideast.json" />
+    <Content Include="CVCAdmin\maps\risk.json" />
+    <Content Include="CVCAdmin\maps\usofa.json" />
+    <Content Include="CVCUser\fonts\flaticon\Flaticon.eot" />
+    <Content Include="CVCUser\fonts\flaticon\Flaticon.ttf" />
+    <Content Include="CVCUser\fonts\flaticon\Flaticon.woff" />
+    <Content Include="CVCUser\fonts\flaticon\_flaticon.scss" />
+    <Content Include="CVCUser\fonts\fontawesome-webfont.eot" />
+    <Content Include="CVCUser\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CVCUser\fonts\fontawesome-webfont.woff" />
+    <Content Include="CVCUser\fonts\fontawesome-webfont.woff2" />
+    <Content Include="CVCUser\fonts\FontAwesome.otf" />
+    <Content Include="CVCUser\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="CVCUser\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="CVCUser\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="CVCUser\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="CVCUser\HomeUser.aspx" />
+    <Content Include="CVCUser\revolution\.DS_Store" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="CVCUser\revolution\fonts\revicons\revicons.eot" />
+    <Content Include="CVCUser\revolution\fonts\revicons\revicons.ttf" />
+    <Content Include="CVCUser\revolution\fonts\revicons\revicons.woff" />
+    <Content Include="CVCUser\revolution\info.cfg" />
+    <Content Include="CVCUser\revolution\js\.DS_Store" />
+    <Content Include="CVCAdmin\AdminMaster.Master" />
+    <Content Include="CVCUser\UserMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\CVCdb.mdf" />
+    <Content Include="App_Data\CVCdb_log.ldf">
+      <DependentUpon>CVCdb.mdf</DependentUpon>
+    </Content>
+    <Content Include="CVCAdmin\css\atlas.css" />
+    <Content Include="CVCAdmin\css\bars.css" />
+    <Content Include="CVCAdmin\css\bootstrap-markdown.min.css" />
+    <Content Include="CVCAdmin\css\bootstrap.min.css" />
+    <Content Include="CVCAdmin\css\chocolat.css" />
+    <Content Include="CVCAdmin\css\clndr.css" />
+    <Content Include="CVCAdmin\css\fabochart.css" />
+    <Content Include="CVCAdmin\css\font-awesome.css" />
+    <Content Include="CVCAdmin\css\icon-font.min.css" />
+    <Content Include="CVCAdmin\css\jqvmap.css" />
+    <Content Include="CVCAdmin\css\popuo-box.css" />
+    <Content Include="CVCAdmin\css\style.css" />
+    <Content Include="CVCAdmin\css\vroom.css" />
+    <Content Include="CVCAdmin\fonts\digital-7-webfont.svg" />
+    <Content Include="CVCAdmin\fonts\digital-7_italic-webfont.svg" />
+    <Content Include="CVCAdmin\fonts\digital-7_mono-webfont.svg" />
+    <Content Include="CVCAdmin\fonts\fontawesome-webfont.svg" />
+    <Content Include="CVCAdmin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CVCAdmin\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="CVCAdmin\Home.aspx" />
+    <Content Include="CVCAdmin\images\1.jpg" />
+    <Content Include="CVCAdmin\images\1.png" />
+    <Content Include="CVCAdmin\images\2.png" />
+    <Content Include="CVCAdmin\images\2222.png" />
+    <Content Include="CVCAdmin\images\3.png" />
+    <Content Include="CVCAdmin\images\4.png" />
+    <Content Include="CVCAdmin\images\5.png" />
+    <Content Include="CVCAdmin\images\admin.jpg" />
+    <Content Include="CVCAdmin\images\admin1.jpg" />
+    <Content Include="CVCAdmin\images\admin2.jpg" />
+    <Content Include="CVCAdmin\images\alarm.png" />
+    <Content Include="CVCAdmin\images\business-1031754_640.jpg" />
+    <Content Include="CVCAdmin\images\clockface.png" />
+    <Content Include="CVCAdmin\images\closew.gif" />
+    <Content Include="CVCAdmin\images\cross.png" />
+    <Content Include="CVCAdmin\images\fb.png" />
+    <Content Include="CVCAdmin\images\hourhand.png" />
+    <Content Include="CVCAdmin\images\icons.png" />
+    <Content Include="CVCAdmin\images\in.jpg" />
+    <Content Include="CVCAdmin\images\in1.jpg" />
+    <Content Include="CVCAdmin\images\in10.jpg" />
+    <Content Include="CVCAdmin\images\in11.jpg" />
+    <Content Include="CVCAdmin\images\in2.jpg" />
+    <Content Include="CVCAdmin\images\in3.jpg" />
+    <Content Include="CVCAdmin\images\in4.jpg" />
+    <Content Include="CVCAdmin\images\in5.jpg" />
+    <Content Include="CVCAdmin\images\in6.jpg" />
+    <Content Include="CVCAdmin\images\in7.jpg" />
+    <Content Include="CVCAdmin\images\in8.jpg" />
+    <Content Include="CVCAdmin\images\in9.jpg" />
+    <Content Include="CVCAdmin\images\leftw.gif" />
+    <Content Include="CVCAdmin\images\minhand.png" />
+    <Content Include="CVCAdmin\images\p1.jpg" />
+    <Content Include="CVCAdmin\images\p2.jpg" />
+    <Content Include="CVCAdmin\images\p3.jpg" />
+    <Content Include="CVCAdmin\images\p4.jpg" />
+    <Content Include="CVCAdmin\images\p5.jpg" />
+    <Content Include="CVCAdmin\images\p6.jpg" />
+    <Content Include="CVCAdmin\images\pic3.jpg" />
+    <Content Include="CVCAdmin\images\rightw.gif" />
+    <Content Include="CVCAdmin\images\right_arrow.png" />
+    <Content Include="CVCAdmin\images\search.png" />
+    <Content Include="CVCAdmin\images\search2.png" />
+    <Content Include="CVCAdmin\images\sechand.png" />
+    <Content Include="CVCAdmin\images\social.png" />
+    <Content Include="CVCAdmin\images\speed.png" />
+    <Content Include="CVCAdmin\images\tick1.png" />
+    <Content Include="CVCAdmin\images\time.png" />
+    <Content Include="CVCAdmin\images\timer.png" />
+    <Content Include="CVCAdmin\images\tw.png" />
+    <Content Include="CVCAdmin\images\watch.png" />
+    <Content Include="CVCAdmin\js\amcharts.js" />
+    <Content Include="CVCAdmin\js\arbor.js" />
+    <Content Include="CVCAdmin\js\atlas.js" />
+    <Content Include="CVCAdmin\js\barChart.jquery.js" />
+    <Content Include="CVCAdmin\js\bootstrap-markdown.js" />
+    <Content Include="CVCAdmin\js\bootstrap.min.js" />
+    <Content Include="CVCAdmin\js\cbpFWTabs.js" />
+    <Content Include="CVCAdmin\js\Chart-pie.js" />
+    <Content Include="CVCAdmin\js\Chart.js" />
+    <Content Include="CVCAdmin\js\clndr.js" />
+    <Content Include="CVCAdmin\js\css3clock.js" />
+    <Content Include="CVCAdmin\js\CSSPlugin.min.js" />
+    <Content Include="CVCAdmin\js\datamaps-all.js" />
+    <Content Include="CVCAdmin\js\dygraph-combined.js" />
+    <Content Include="CVCAdmin\js\fabochart.js" />
+    <Content Include="CVCAdmin\js\jquery-1.10.2.min.js" />
+    <Content Include="CVCAdmin\js\jquery.chocolat.js" />
+    <Content Include="CVCAdmin\js\jquery.nicescroll.js" />
+    <Content Include="CVCAdmin\js\jquery.vmap.js" />
+    <Content Include="CVCAdmin\js\jquery.vmap.sampledata.js" />
+    <Content Include="CVCAdmin\js\jquery.vmap.world.js" />
+    <Content Include="CVCAdmin\js\light.js" />
+    <Content Include="CVCAdmin\js\map.js" />
+    <Content Include="CVCAdmin\js\modernizr.custom.04022.js" />
+    <Content Include="CVCAdmin\js\moment-2.2.1.js" />
+    <Content Include="CVCAdmin\js\protovis-d3.2.js" />
+    <Content Include="CVCAdmin\js\radar.js" />
+    <Content Include="CVCAdmin\js\responsiveslides.min.js" />
+    <Content Include="CVCAdmin\js\scripts.js" />
+    <Content Include="CVCAdmin\js\serial.js" />
+    <Content Include="CVCAdmin\js\site.js" />
+    <Content Include="CVCAdmin\js\skycons.js" />
+    <Content Include="CVCAdmin\js\TweenLite.min.js" />
+    <Content Include="CVCAdmin\js\underscore-min.js" />
+    <Content Include="CVCAdmin\js\vix.js" />
+    <Content Include="CVCAdmin\js\vroom.js" />
+    <Content Include="CVCUser\css\animate.min.css" />
+    <Content Include="CVCUser\css\bootstrap.min.css" />
+    <Content Include="CVCUser\css\font-awesome.min.css" />
+    <Content Include="CVCUser\css\hover.css" />
+    <Content Include="CVCUser\css\jquery.bxslider.css" />
+    <Content Include="CVCUser\css\jquery.fancybox.css" />
+    <Content Include="CVCUser\css\owl.carousel.css" />
+    <Content Include="CVCUser\css\owl.theme.default.min.css" />
+    <Content Include="CVCUser\css\responsive.css" />
+    <Content Include="CVCUser\css\style.css" />
+    <Content Include="CVCUser\fonts\flaticon\flaticon.css" />
+    <Content Include="CVCUser\fonts\flaticon\flaticon.html" />
+    <Content Include="CVCUser\fonts\flaticon\Flaticon.svg" />
+    <Content Include="CVCUser\fonts\fontawesome-webfont.svg" />
+    <Content Include="CVCUser\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="CVCUser\img\blog-page\1.jpg" />
+    <Content Include="CVCUser\img\blog-page\2.jpg" />
+    <Content Include="CVCUser\img\blog-page\3.jpg" />
+    <Content Include="CVCUser\img\blog-page\4.jpg" />
+    <Content Include="CVCUser\img\blog-page\admin.jpg" />
+    <Content Include="CVCUser\img\blog-page\comment1.jpg" />
+    <Content Include="CVCUser\img\blog-page\s1.jpg" />
+    <Content Include="CVCUser\img\blog-page\s2.jpg" />
+    <Content Include="CVCUser\img\blog-page\s3.jpg" />
+    <Content Include="CVCUser\img\blog-page\s4.jpg" />
+    <Content Include="CVCUser\img\blog\1.jpg" />
+    <Content Include="CVCUser\img\blog\2.jpg" />
+    <Content Include="CVCUser\img\blog\3.jpg" />
+    <Content Include="CVCUser\img\bx-slider\bx_loader.gif" />
+    <Content Include="CVCUser\img\bx-slider\controls.png" />
+    <Content Include="CVCUser\img\call-to-action\center-box-bg.jpg" />
+    <Content Include="CVCUser\img\call-to-action\left-box-bg.jpg" />
+    <Content Include="CVCUser\img\call-to-action\right-box-bg.jpg" />
+    <Content Include="CVCUser\img\causes\1.jpg" />
+    <Content Include="CVCUser\img\causes\2.jpg" />
+    <Content Include="CVCUser\img\causes\3.jpg" />
+    <Content Include="CVCUser\img\causes\4.jpg" />
+    <Content Include="CVCUser\img\causes\b1.jpg" />
+    <Content Include="CVCUser\img\causes\clist-1.jpg" />
+    <Content Include="CVCUser\img\causes\clist-2.jpg" />
+    <Content Include="CVCUser\img\causes\clist-3.jpg" />
+    <Content Include="CVCUser\img\causes\clist-4.jpg" />
+    <Content Include="CVCUser\img\causes\details-1.jpg" />
+    <Content Include="CVCUser\img\clients\logo-1.png" />
+    <Content Include="CVCUser\img\clients\logo-10.png" />
+    <Content Include="CVCUser\img\clients\logo-2.png" />
+    <Content Include="CVCUser\img\clients\logo-3.png" />
+    <Content Include="CVCUser\img\clients\logo-4.png" />
+    <Content Include="CVCUser\img\clients\logo-5.png" />
+    <Content Include="CVCUser\img\clients\logo-6.png" />
+    <Content Include="CVCUser\img\clients\logo-7.png" />
+    <Content Include="CVCUser\img\clients\logo-8.png" />
+    <Content Include="CVCUser\img\clients\logo-9.png" />
+    <Content Include="CVCUser\img\event\1.jpg" />
+    <Content Include="CVCUser\img\event\2.jpg" />
+    <Content Include="CVCUser\img\event\3.jpg" />
+    <Content Include="CVCUser\img\event\event-details1.jpg" />
+    <Content Include="CVCUser\img\fancybox\blank.gif" />
+    <Content Include="CVCUser\img\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="CVCUser\img\fancybox\fancybox_loading.gif" />
+    <Content Include="CVCUser\img\fancybox\fancybox_overlay.png" />
+    <Content Include="CVCUser\img\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="CVCUser\img\fancybox\fancybox_sprite.png" />
+    <Content Include="CVCUser\img\faq\1.jpg" />
+    <Content Include="CVCUser\img\faq\2.jpg" />
+    <Content Include="CVCUser\img\faq\3.jpg" />
+    <Content Include="CVCUser\img\gallery\1.jpg" />
+    <Content Include="CVCUser\img\gallery\2.jpg" />
+    <Content Include="CVCUser\img\gallery\3.jpg" />
+    <Content Include="CVCUser\img\gallery\4.jpg" />
+    <Content Include="CVCUser\img\gallery\5.jpg" />
+    <Content Include="CVCUser\img\gallery\6.jpg" />
+    <Content Include="CVCUser\img\gallery\s1.jpg" />
+    <Content Include="CVCUser\img\gallery\s10.jpg" />
+    <Content Include="CVCUser\img\gallery\s11.jpg" />
+    <Content Include="CVCUser\img\gallery\s12.jpg" />
+    <Content Include="CVCUser\img\gallery\s2.jpg" />
+    <Content Include="CVCUser\img\gallery\s3.jpg" />
+    <Content Include="CVCUser\img\gallery\s4.jpg" />
+    <Content Include="CVCUser\img\gallery\s5.jpg" />
+    <Content Include="CVCUser\img\gallery\s6.jpg" />
+    <Content Include="CVCUser\img\gallery\s7.jpg" />
+    <Content Include="CVCUser\img\gallery\s8.jpg" />
+    <Content Include="CVCUser\img\gallery\s9.jpg" />
+    <Content Include="CVCUser\img\offer\1.jpg" />
+    <Content Include="CVCUser\img\offer\2.jpg" />
+    <Content Include="CVCUser\img\owl\ajax-loader.gif" />
+    <Content Include="CVCUser\img\owl\owl.video.play.png" />
+    <Content Include="CVCUser\img\resources\about-1.jpg" />
+    <Content Include="CVCUser\img\resources\about-2.png" />
+    <Content Include="CVCUser\img\resources\footer-logo.png" />
+    <Content Include="CVCUser\img\resources\inner-header-bg.jpg" />
+    <Content Include="CVCUser\img\resources\logo.png" />
+    <Content Include="CVCUser\img\resources\map-marker.png" />
+    <Content Include="CVCUser\img\resources\payment-logos.png" />
+    <Content Include="CVCUser\img\resources\select-menu-bg.png" />
+    <Content Include="CVCUser\img\resources\testi-bg.jpg" />
+    <Content Include="CVCUser\img\slides\1.jpg" />
+    <Content Include="CVCUser\img\slides\2.jpg" />
+    <Content Include="CVCUser\img\slides\4.jpg" />
+    <Content Include="CVCUser\img\slides\5.jpg" />
+    <Content Include="CVCUser\img\team\1.jpg" />
+    <Content Include="CVCUser\img\team\2.jpg" />
+    <Content Include="CVCUser\img\team\3.jpg" />
+    <Content Include="CVCUser\img\team\4.jpg" />
+    <Content Include="CVCUser\img\team\single-volunteer.jpg" />
+    <Content Include="CVCUser\inc\sendemail.php" />
+    <Content Include="CVCUser\js\bootstrap.min.js" />
+    <Content Include="CVCUser\js\circle-progress.js" />
+    <Content Include="CVCUser\js\custom.js" />
+    <Content Include="CVCUser\js\gmap.js" />
+    <Content Include="CVCUser\js\isotope.pkgd.min.js" />
+    <Content Include="CVCUser\js\jquery-1.11.1.min.js" />
+    <Content Include="CVCUser\js\jquery-parallax.js" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\external\jquery\jquery.js" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-icons_222222_256x240.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\index.html" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.css" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.min.css" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.min.js" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.structure.css" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.structure.min.css" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.theme.css" />
+    <Content Include="CVCUser\js\jquery-ui-1.11.4\jquery-ui.theme.min.css" />
+    <Content Include="CVCUser\js\jquery.appear.js" />
+    <Content Include="CVCUser\js\jquery.bxslider.min.js" />
+    <Content Include="CVCUser\js\jquery.countTo.js" />
+    <Content Include="CVCUser\js\jquery.easing.min.js" />
+    <Content Include="CVCUser\js\jquery.fancybox.pack.js" />
+    <Content Include="CVCUser\js\jquery.mixitup.min.js" />
+    <Content Include="CVCUser\js\owl.carousel.min.js" />
+    <Content Include="CVCUser\js\validate.js" />
+    <Content Include="CVCUser\revolution\assets\coloredbg.png" />
+    <Content Include="CVCUser\revolution\assets\gridtile.png" />
+    <Content Include="CVCUser\revolution\assets\gridtile_3x3.png" />
+    <Content Include="CVCUser\revolution\assets\gridtile_3x3_white.png" />
+    <Content Include="CVCUser\revolution\assets\gridtile_white.png" />
+    <Content Include="CVCUser\revolution\assets\loader.gif" />
+    <Content Include="CVCUser\revolution\assets\sources\fb.png" />
+    <Content Include="CVCUser\revolution\assets\sources\fr.png" />
+    <Content Include="CVCUser\revolution\assets\sources\ig.png" />
+    <Content Include="CVCUser\revolution\assets\sources\post.png" />
+    <Content Include="CVCUser\revolution\assets\sources\revolution_slide1.png" />
+    <Content Include="CVCUser\revolution\assets\sources\revolution_slide2.png" />
+    <Content Include="CVCUser\revolution\assets\sources\tw.png" />
+    <Content Include="CVCUser\revolution\assets\sources\vm.png" />
+    <Content Include="CVCUser\revolution\assets\sources\wc.png" />
+    <Content Include="CVCUser\revolution\assets\sources\yt.png" />
+    <Content Include="CVCUser\revolution\css\closedhand.cur" />
+    <Content Include="CVCUser\revolution\css\index.php" />
+    <Content Include="CVCUser\revolution\css\layers.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\ares.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\custom.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\dione.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\erinyen.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\gyges.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\hades.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\hebe.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\hephaistos.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\hermes.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\hesperiden.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\metis.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\persephone.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\uranus.css" />
+    <Content Include="CVCUser\revolution\css\navigation-skins\zeus.css" />
+    <Content Include="CVCUser\revolution\css\navigation.css" />
+    <Content Include="CVCUser\revolution\css\openhand.cur" />
+    <Content Include="CVCUser\revolution\css\settings.css" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\css\font-awesome.min.css" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\css\index.php" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\fonts\index.php" />
+    <Content Include="CVCUser\revolution\fonts\font-awesome\index.php" />
+    <Content Include="CVCUser\revolution\fonts\index.php" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\css\helper.css" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\css\index.php" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\css\pe-icon-7-stroke.css" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\fonts\index.php" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="CVCUser\revolution\fonts\pe-icon-7-stroke\index.php" />
+    <Content Include="CVCUser\revolution\fonts\revicons\index.php" />
+    <Content Include="CVCUser\revolution\fonts\revicons\revicons.svg" />
+    <Content Include="CVCUser\revolution\index.php" />
+    <Content Include="CVCUser\revolution\js\extensions\index.php" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.actions.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.carousel.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.kenburn.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.layeranimation.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.migration.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.navigation.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.parallax.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.slideanims.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\revolution.extension.video.min.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\index.php" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.actions.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.carousel.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.kenburn.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.layeranimation.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.migration.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.navigation.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.parallax.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.slideanims.js" />
+    <Content Include="CVCUser\revolution\js\extensions\source\revolution.extension.video.js" />
+    <Content Include="CVCUser\revolution\js\index.php" />
+    <Content Include="CVCUser\revolution\js\jquery.themepunch.enablelog.js" />
+    <Content Include="CVCUser\revolution\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="CVCUser\revolution\js\jquery.themepunch.tools.min.js" />
+    <Content Include="CVCUser\revolution\js\source\index.php" />
+    <Content Include="CVCUser\revolution\js\source\jquery.themepunch.enablelog.js" />
+    <Content Include="CVCUser\revolution\js\source\jquery.themepunch.revolution.js" />
+    <Content Include="CVCUser\revolution\js\source\jquery.themepunch.tools.min.js" />
+    <Content Include="CVCUser\revolution\php\facebook\class-facebook.php" />
+    <Content Include="CVCUser\revolution\php\flickr\class-flickr.php" />
+    <Content Include="CVCUser\revolution\php\instagram\class-instagram.php" />
+    <Content Include="CVCUser\revolution\php\twitter\class-twitter.php" />
+    <Content Include="CVCUser\revolution\php\twitter\connection\Application.php" />
+    <Content Include="CVCUser\revolution\php\twitter\connection\ConnectionAbstract.php" />
+    <Content Include="CVCUser\revolution\php\twitter\connection\User.php" />
+    <Content Include="CVCUser\revolution\php\twitter\RestApi.php" />
+    <Content Include="CVCUser\revolution\php\vimeo\class-vimeo.php" />
+    <Content Include="CVCUser\revolution\php\youtube\class-youtube.php" />
+    <Content Include="CVCUser\WebForm1.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CVCAdmin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CVCAdmin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CVCAdmin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CVCAdmin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CVCUser\HomeUser.aspx.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CVCUser\HomeUser.aspx.designer.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CVCUser\UserMaster.Master.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CVCUser\UserMaster.Master.designer.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CVCUser\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CVCUser\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49211</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49211/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
