@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/responsive.css"/></head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1"  runat="server">
         <div>
 
             
