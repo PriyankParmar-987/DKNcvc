@@ -257,7 +257,7 @@
 									</div>
 								</div>--%>
 							</div>
-							<h3>Manoj Jain</h3>
+							<h3>Manoj Jain p.</h3>
 							<span>Student</span>
 							<p>Best Volunteer</p>
 							<a href="volunteer-profile.html" class="thm-btn">View Profile</a>
