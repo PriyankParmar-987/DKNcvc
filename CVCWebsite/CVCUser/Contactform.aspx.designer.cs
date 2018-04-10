@@ -11,7 +11,7 @@ namespace CVCWebsite.CVCUser
 {
 
 
-    public partial class Volunteer
+    public partial class Contactform
     {
     }
 }
