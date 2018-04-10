@@ -6,7 +6,7 @@
         table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 90%;
 }
 
 td, th {

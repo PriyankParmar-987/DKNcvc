@@ -8,7 +8,7 @@
         table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: 08%;
 }
 
 td, th {
