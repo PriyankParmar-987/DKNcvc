@@ -334,21 +334,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!--//down-->
                     <div class="menu">
                         <ul id="menu">
-                            <%--<li><a href="index.html"><i class="fa fa-tachometer"></i> <span>Home</span></a></li>--%>
-
+                         
                             <li id="menu-academico"><a href="#"><i class="fa fa-table"></i><span>Home</span> <span class="fa fa-angle-right" style="float: right"></span></a>
                                 <ul id="menu-academico-sub">
-                                    <li id="Slider.aspx"><a href="Slider1.aspx">Slider</a></li>
-                                   <%-- <li id="Mission.apsx"><a href="Mission.aspx">Mission</a></li>
-                                    <li id="Vision.aspx"><a href="Vision.aspx">Vision</a></li>
-                                    <li id="impact.aspx"><a href="impact.aspx">Impact</a></li>
-                                   --%> <li id="Gallery.aspx"><a href="Gallery.aspx">Gallery</a></li>
-                                    <li id="event.aspx"><a href="event.aspx">Event</a></li>
+                                    <li id="Slider.aspx"><a href="Slider.aspx">Slider</a></li>
+                                  
+                                    
+                                    <li id="evententry.aspx"><a href="evententry.aspx">Event</a></li>
+                                    <li id="#"><a href="event.aspx">Activity</a></li>
+                                   
+                                    <li id="Gallery.aspx"><a href="Gallery.aspx">Gallery</a></li>
+                                    
+                                     <li id="Volunteerofthemonth.aspx"><a href="Volunteerofthemonth.aspx">Volunteer of the month</a></li>
+                                    
+                                    <li id="#"><a href="Volunteerofthemonth.aspx">Video</a></li>
+                                   <li id="Suceesstroy.aspx"><a href="Suceesstory.aspx">Success Stroies</a></li>
                                     <li id="news.aspx"><a href="news.aspx">News</a></li>
-                                    <li id="Volunteerofthemonth.aspx"><a href="Volunteerofthemonth.aspx">Volunteer of the month</a></li>
-                                    <li id="Suceesstroy.aspx"><a href="Suceesstory.aspx">Success Stroies</a></li>
-
+                                   
                                 </ul>
+                                 <li><a href="#"><i class="fa fa-file-text-o"></i><span>Activity</span></a></li>
+                             <li><a href="evententry.aspx"><i class="fa fa-file-text-o"></i><span>Events</span></a></li>
+
                             <li id="menu-academico"><a href="#"><i class="lnr lnr-layers"></i><span>Gallery</span> <span class="fa fa-angle-right" style="float: right"></span></a>
                                 <ul id="menu-academico-sub">
                                     <li id="menu-academico-avaliacoes"><a href="gallery.aspx">Photos</a></li>
@@ -358,8 +364,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </li>
 
 
-                            <li><a href="evententry"><i class="fa fa-file-text-o"></i><span>Events</span></a></li>
-
+                           
                             <li><a href="typography.html"><i class="fa fa-file-text-o"></i><span>News</span></a></li>
 
                             <li><a href="Volunteerofthemonth.aspx"><i class="lnr lnr-pencil"></i><span>Volunteer of the month</span></a></li>
