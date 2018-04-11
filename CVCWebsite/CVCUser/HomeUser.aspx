@@ -373,9 +373,9 @@
 		<div id="slider1" class="rev_slider"  data-version="5.0">
 			<ul>
 				<li data-transition="parallaxvertical">
-                    <asp:Image  ID="I6" runat="server">
+                    
 
-                    </asp:Image>
+                    <asp:Image ID="Image17" runat="server" />
                                    <%--<img src="img/slides/1.jpg"  alt="" width="1920" height="705" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
 					--%><div class="tp-caption sfl tp-resizeme thm-banner-h1" 
 				        data-x="left" data-hoffset="0" 
@@ -439,9 +439,8 @@
 				    </div>--%>
 				</li>
 				<li data-transition="parallaxvertical">
-                    <asp:Image  ID="I2" runat="server">
-
-                    </asp:Image>
+                    
+                    <asp:Image ID="Image18" runat="server" />
 					<%--<img src="img/slides/2.jpg"  alt=""  width="1920" height="705" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="2" >
 					--%><div class="tp-caption sfl tp-resizeme thm-banner-h1 blue-bg" 
 				        data-x="left" data-hoffset="0" 
