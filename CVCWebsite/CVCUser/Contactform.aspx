@@ -1,5 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CVCUser/usermaster.Master" AutoEventWireup="true" CodeBehind="Contactform.aspx.cs" Inherits="CVCWebsite.CVCUser.Contactform" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $("#btn_save").click(function () {
+                var name = document.getElementById("txt_name");
+                var phone = document.getElementById("txt_phone");
+                var email = document.getElementById("txt_email");
+                var message = document.getElementById("txt_msg");
+                if (name.value == "" || phone.value == "" || email.value == "" || message.value == "") {
+                    alert("Please enter all the fields");
+                    return false;
+                }
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "Contactform.aspx/Save",
+                    data: "{'name':'" + name.value + "','phone':'" + phone.value + "','email':'" + email.value + "','message':'" + message.value + "'}",
+                    datatype: "json",
+                    success: function (data) {
+                        //Show_data();
+                        alert("Submit Successfully");
+                        
+                        //ClearField()
+                    }
+                });
+            });
+
+        </script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <section class="inner-header">
@@ -27,17 +57,17 @@
 			<div class="row">
 				<div class="col-md-8">
 					<h2>Contact Form</h2>
-					<form action="inc/sendemail.php" class="contact-form row" id="contact-page-contact-form">
+					<form action="save" class="contact-form row" id="contact-page-contact-form" method="post">
 						<div class="col-md-6">
-							<input type="text" name="name" placeholder="Name">
-							<input type="text" name="email" placeholder="Email">
-							<input type="text" name="phone" placeholder="Phone">
+							<input type="text" name="name"  id="txt_name" placeholder="Name">
+							<input type="text" name="email"  id="txt_email" placeholder="Email">
+							<input type="text" name="phone" id="txt_phone" placeholder="Phone">
 							
 						</div>
 						<div class="col-md-6">
-							<textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+							<textarea name="message" id="txt_msg" placeholder="Message" cols="30" rows="10"></textarea>
 						</div>
-						<div class="col-md-12"><button class="thm-btn" type="submit">Send</button></div>
+						<div class="col-md-12"><button class="thm-btn" id="btn_save" type="submit">Send</button></div>
 					</form>
 				</div>
 				<div class="col-md-4">
