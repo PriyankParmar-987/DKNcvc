@@ -343,7 +343,7 @@
 							--%></ul>
 						</li>
 						<li class="dropdown">
-							<a href="#">Pages</a>
+							<a href="#">Page</a>
 							<ul class="submenu">
 								<li><a href="donations.html">Donation</a></li>
 								<li><a href="donations.html">Become A Volunteer</a></li>
