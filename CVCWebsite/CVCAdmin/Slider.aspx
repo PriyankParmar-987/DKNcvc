@@ -67,7 +67,7 @@ tr:nth-child(even) {
              <td class="auto-style2"  style="
   padding: 4px;">
                  <asp:FileUpload ID="fileuploadimages2"  style=" background: #00c6d7;" runat="server" />
-                 <asp:Button ID="Button2" runat="server" Text="Submit"  />
+                 <asp:Button ID="Button2" runat="server" Text="Submit" OnClick="Button2_Click"  />
                  <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
              </td>
              

@@ -22,22 +22,22 @@ namespace ChangeVadodaraCampaign.CVCUser {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// I6 control.
+        /// Image17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image I6;
+        protected global::System.Web.UI.WebControls.Image Image17;
         
         /// <summary>
-        /// I2 control.
+        /// Image18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image I2;
+        protected global::System.Web.UI.WebControls.Image Image18;
         
         /// <summary>
         /// Image1 control.
