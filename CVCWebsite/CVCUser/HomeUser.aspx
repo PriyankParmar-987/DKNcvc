@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Change Vadodara Campaign </title>
+    <title>CHANGE VADODARA CAMPAIGN </title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	
@@ -296,37 +296,44 @@
 				<div class="nav-header">
 					<ul>
 						<li class="dropdown">
-							<a href="#">Home</a>
+							<a href="HomeUser.aspx">Home</a>
 							<%--<ul class="submenu">
 								<li><a href="index.html">Home One</a></li>
 								<li><a href="index2.html">Home Two</a></li>
 							</ul>--%>
 						</li>
-						<li><a href="About.aspx">About</a></li>						
+						<li><a href="About.aspx">About</a>
+                            <ul class="submenu">
+                                <li><a href="index.html">About Us</a></li>
+								<li><a href="index.html">Our Team</a></li>
+								<li><a href="index2.html">Volunteer Of The Month</a></li>
+							</ul>
+	
+						</li>						
 						<li class="dropdown">
 							<a href="#">Activity</a>
-							<ul class="submenu">
-								<%--<li><a href="causes-grid.html">Causes Grid</a></li>--%>
+							<%--<ul class="submenu">
+								<li><a href="causes-grid.html">Causes Grid</a></li>
 								<li><a href="causes-list.html">Activity List</a></li>
-								<%--<li><a href="causes-single.html">Single Cause</a></li>--%>
-							</ul>
+								<li><a href="causes-single.html">Single Cause</a></li>
+							</ul>--%>
 						</li>						
 						<li class="dropdown">
 							<a href="#">Events</a>
-							<ul class="submenu">
+							<%--<ul class="submenu">
 								<li><a href="events-grid.html">Events Grid</a></li>
-								<%--<li><a href="events-list.html">Events List</a></li>
-								<li><a href="events-single.html">Event Single</a></li>--%>
-							</ul>
+								<li><a href="events-list.html">Events List</a></li>
+								<li><a href="events-single.html">Event Single</a></li>
+							</ul>--%>
 						</li>
-						<li class="dropdown">
+						<%--<li class="dropdown">
 							<a href="volunteer.aspx">Volunteer</a>
 							<ul class="submenu">
 								<li><a href="volunteer.aspx">Volunteers</a></li>
-								<%--<li><a href="volunteer-style-two.html">Volunteer Style Two</a></li>
+								<li><a href="volunteer-style-two.html">Volunteer Style Two</a></li>
 								<li><a href="volunteer-profile.html">Volunteer Profile</a></li>
-							--%></ul>
-						</li>
+							</ul>
+						</li>--%>
 						<li class="dropdown">
 							<a href="#">Gallery</a>
 							<ul class="submenu">
@@ -339,16 +346,18 @@
 							<a href="#">Pages</a>
 							<ul class="submenu">
 								<li><a href="donations.html">Donation</a></li>
-								<%--<li><a href="faq.html">FAQ</a></li>
+								<li><a href="donations.html">Become A Volunteer</a></li>
+								
+                                <%--<li><a href="faq.html">FAQ</a></li>
 							--%></ul>
 						</li>
 						<li class="dropdown">
-							<a href="vol1.aspx">Became a Volunteer</a>
-							<%--<ul class="submenu">
-								<li><a href="blog-style-one.html">Blog Style One</a></li>
-								<li><a href="blog-style-two.html">Blog Style Two</a></li>
-								<li><a href="blog-details.html">Blog Details</a></li>
-							</ul>--%>
+							<a href="vol1.aspx">Get Involved</a>
+							<ul class="submenu">
+								<li><a href="blog-style-one.html">Guideline for Donors</a></li>
+								<li><a href="blog-style-two.html">Guideline for Volunteers</a></li>
+								<li><a href="blog-details.html">Guideline for Visitors</a></li>
+							</ul>
 						</li>
 						<li><a href="cnct.aspx">Contact</a></li>
 					</ul>
