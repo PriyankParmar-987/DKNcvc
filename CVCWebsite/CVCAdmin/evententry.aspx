@@ -21,7 +21,7 @@
 
 
 <table style="width: 100%;" >
-     <h3 style="text-align: center"> Event Entry</h3>
+     <h3 style="text-align: center"> Event Entry Details</h3>
     
     
         <tr>
