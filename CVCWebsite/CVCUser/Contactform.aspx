@@ -57,14 +57,18 @@
 			<div class="row">
 				<div class="col-md-8">
 					<h2>Contact Form</h2>
-					<form action="save" class="contact-form row" id="contact-page-contact-form" method="post">
+					<form action="Save" class="contact-form row" id="contact-page-contact-form" method="post">
 						<div class="col-md-6">
-							<input type="text" name="name"  id="txt_name" placeholder="Name">
-							<input type="text" name="email"  id="txt_email" placeholder="Email">
-							<input type="text" name="phone" id="txt_phone" placeholder="Phone">
 							
+                            <input type="text" name="name"  id="txt_name" placeholder="Name">
+                            <asp:textbox runat="server"></asp:textbox>
+                            <input type="text" name="email"  id="txt_email" placeholder="Email">
+                            <asp:textbox runat="server"></asp:textbox>
+                            <input type="text" name="phone" id="txt_phone" placeholder="Phone">
+                            <asp:textbox runat="server"></asp:textbox>
 						</div>
 						<div class="col-md-6">
+
 							<textarea name="message" id="txt_msg" placeholder="Message" cols="30" rows="10"></textarea>
 						</div>
 						<div class="col-md-12"><button class="thm-btn" id="btn_save" type="submit">Send</button></div>

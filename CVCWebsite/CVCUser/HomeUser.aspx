@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HomeUser.aspx.cs" Inherits="ChangeVadodaraCampaign.CVCUser.HomeUser" %>
 
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -566,58 +568,62 @@
 	          <div class="col-sm-12 col-md-12 col-lg-6 md-col6-center">
 	            <h4 class="sec-color text-uppercase double-line line-left">Upcoming Event</h4>
 	            <div class="bx-event-carousel">
-	              <div class="event">
+	            
+                   <div class="event">
 	                <div class="row">
 	                  <div class="col-sm-4">
 	                    <div class="event-thumb">
 	                      <div class="thumb">
                               <div class="full-width">
-                                  <asp:Image ID="Image1" runat="server" ImageUrl="~/User/pics/20171231122150_IMG_7499-01.jpeg" />
+                                  <asp:Image ID="Image1" runat="server" class="full-width" ImageUrl="~/User/pics/20171231122150_IMG_7499-01.jpeg" />
 	                        <%--<img class="full-width" src="img/event/1.jpg" alt="">--%>
 	                      </div>
                               </div>
 	                      <ul class="event-date">
-	                        <li class="date">8</li>
-	                        <li class="month">April</li>
+	                        <li class="date"><asp:Label ID="Label14" runat="server" Text="28"></asp:Label></li>
+	                        <li class="month"><asp:Label ID="Label15" runat="server" Text="aug"></asp:Label></li>
 	                      </ul>
 	                    </div>
 	                  </div>
 	                  <div class="col-sm-8">
 	                    <div class="event-content">
-	                      <h5 class="event-title"><a href="#">Fun</a></h5>
+	                      <h5 class="event-title"><a href="#"><asp:Label ID="Label16" runat="server" Text="Label"></asp:Label></a></h5>
 	                      <ul class="event-held list-inline">
-	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i> 9.00 am - 12.30 pm</li>
-	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i> Waghodia</li>
+	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i> <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label></li>
+	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i> <asp:Label ID="Label18" runat="server" Text="Label"></asp:Label></li>
 	                      </ul>
-	                      <p class="mb-0">Planing for entertain to the cute children</p>
+	                      <p class="mb-0"><asp:Label ID="Label19" runat="server" Text="Label"></asp:Label></p>
 	                    </div>
 	                  </div>
 	                </div>
 	              </div>
-	              <div class="event">
+                
+	             <div class="event">
 	                <div class="row">
 	                  <div class="col-sm-4">
 	                    <div class="event-thumb">
 	                      <div class="thumb">
                                <div class="full-width">
-                                 <asp:Image ID="Image2" runat="server" ImageUrl="~/User/pics/DSC_1101.JPG" />
-	                    <%--    <img class="full-width" src="img/event/1.jpg" alt="">--%>
+                                 <asp:Image ID="Image2" runat="server" class="full-width"  ImageUrl="~/User/pics/DSC_1101.JPG" />
+	                     <%--  <img class="full-width" src="img/event/1.jpg" alt="">--%>
 	                      </div>
                               </div>
 	                      <ul class="event-date">
-	                        <li class="date">15</li>
-	                        <li class="month">April</li>
+                            <li class="date"> <asp:Label ID="Label1" runat="server" Text="28"></asp:Label></li>
+                            <li class="month">  <asp:Label ID="Label2" runat="server"   Text="Augs"></asp:Label></li>
+	                        <%--<li class="date">15</li>
+	                        <li class="month">April</li> --%>
 	                      </ul>
 	                    </div>
 	                  </div>
 	                  <div class="col-sm-8">
 	                    <div class="event-content">
-	                      <h5 class="event-title"><a href="#">April Cool</a></h5>
+	                      <h5 class="event-title"><a href="#"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label> </a></h5>
 	                      <ul class="event-held list-inline">
-	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i> 9.00 am - 12.00 pm</li>
-	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i> Karelibaug</li>
+	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i><asp:Label ID="Label4" runat="server" Text="12:00 to 2:00"></asp:Label></li>
+	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i><asp:Label ID="Label5" runat="server" Text="Karelibaugh"></asp:Label>             </li>
 	                      </ul>
-	                      <p class="mb-0">About how to grow Plants....</p>
+	                      <p class="mb-0">   <asp:Label ID="Label6" runat="server" Text="hellooo karelibag"></asp:Label> </p>
 	                    </div>
 	                  </div>
 	                </div>
@@ -629,36 +635,36 @@
 	                      <div class="thumb">
                               
                                <div class="full-width">
-                                 <asp:Image ID="Image3" runat="server" ImageUrl="~/User/pics/DSC_4095.JPG" />
-	                       <%-- <img class="full-width" src="img/event/1.jpg" alt="">
-	--%>                      </div>
+                                 <asp:Image ID="Image3" runat="server"  class="full-width" ImageUrl="~/User/pics/DSC_4095.JPG" />
+	                       <%--<img class="full-width" src="img/event/1.jpg" alt="">--%>
+	                     </div>
                               </div>
 	                      <ul class="event-date">
-	                        <li class="date">22</li>
-	                        <li class="month">April</li>
+	                        <li class="date"><asp:Label ID="Label8" runat="server" Text="29"></asp:Label></li>
+	                        <li class="month"><asp:Label ID="Label9" runat="server" Text="aug"></asp:Label></li>
 	                      </ul>
 	                    </div>
 	                  </div>
 	                  <div class="col-sm-8">
 	                    <div class="event-content">
-	                      <h5 class="event-title"><a href="#">Food Celebration</a></h5>
+	                      <h5 class="event-title"><a href="#"><asp:Label ID="Label10" runat="server" Text="hellooo karelibag"></asp:Label></a></h5>
 	                      <ul class="event-held list-inline">
-	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i> 9.00 am - 12.30 pm</li>
-	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i> samta</li>
+	                        <li class="mr-10" data-text-color="#555"><i class="fa fa-clock-o"></i> <asp:Label ID="Label11" runat="server" Text="hellooo karelibag"></asp:Label></li>
+	                        <li data-text-color="#555"> <i class="fa fa-map-marker"></i> <asp:Label ID="Label12" runat="server" Text="hellooo karelibag"></asp:Label></li>
 	                      </ul>
-	                      <p class="mb-0">distributing food to people & enjoy as a Food Day</p>
+	                      <p class="mb-0"><asp:Label ID="Label13" runat="server" Text="hellooo karelibag"></asp:Label></p>
 	                    </div>
 	                  </div>
 	                </div>
 	              </div>
-	              <div class="event">
+	           <%--   <div class="event">
 	                <div class="row">
 	                  <div class="col-sm-4">
 	                    <div class="event-thumb">
 	                      <div class="thumb">
                                <div class="full-width">
                                  <asp:Image ID="Image4" runat="server" ImageUrl="~/User/pics/DSC05447.JPG" />
-	                       <%-- <img class="full-width" src="img/event/1.jpg" alt="">--%>
+	                        <img class="full-width" src="img/event/1.jpg" alt="">
 	                      </div>
                               </div>
 	                      <ul class="event-date">
@@ -678,8 +684,8 @@
 	                    </div>
 	                  </div>
 	                </div>
-	              </div>
-	            </div>
+	              </div>--%>
+	           </div>
 	          </div>
 	          <div class="col-sm-12 col-md-12 col-lg-6 md-col6-center mt-md-50">
 	            <h4 class="sec-color text-uppercase double-line line-left">Featured Causes</h4>

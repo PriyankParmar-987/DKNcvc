@@ -10,7 +10,7 @@
 namespace CVCWebsite.CVCAdmin {
     
     
-    public partial class showevent {
+    public partial class Hevent {
         
         /// <summary>
         /// GridView1 control.
@@ -22,21 +22,12 @@ namespace CVCWebsite.CVCAdmin {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// btnAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
-        /// HyperLink1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Button btnAdd;
     }
 }
